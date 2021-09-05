@@ -2,28 +2,20 @@
 
 I created this project in order to see and learn how socket.io works together with Vuejs
 
-## Project setup
+### Getting started for production environments...
 
-```
-yarn install
-```
+In **/Front**, use
 
-### Compiles and hot-reloads for development
-
-```
-yarn serve
+```sh
+$ npm install
+$ npm run build
 ```
 
-### Compiles and minifies for production
+Start the server.
 
-```
-yarn build
-```
-
-### Lints and fixes files
-
-```
-yarn lint
+```sh
+$ npm install
+$ npm start
 ```
 
 ## Contributing
