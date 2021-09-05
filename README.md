@@ -2,6 +2,10 @@
 
 I created this project in order to see and learn how socket.io works together with Vuejs
 
+### Project Preview ( Currently )
+
+<img src="https://i.imgur.com/SGlwNj9.png" />
+
 ### Getting started for production environments...
 
 In **/Front**, use
