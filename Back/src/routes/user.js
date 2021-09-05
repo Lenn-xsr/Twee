@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { User } = require("../src/databases/local");
+const { User } = require("../databases/local");
 
 router.post("/signin", (req, res) => {
   const { user, password } = req.body;

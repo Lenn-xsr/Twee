@@ -20,7 +20,7 @@ $ npm start
 
 ## 📝 TO-DO
 
-- [ ] Separate socket.io events into a folder ([Socket Folder](https://github.com/Lenn-xsr/Twee/tree/main/Back/src/socket)).
+- [x] Separate socket.io events into a folder ([Socket Folder](https://github.com/Lenn-xsr/Twee/tree/main/Back/src/socket)).
 - [ ] Create a CRUD.
 - [ ] Create mixins to facilitate interactions with the backend ([Mixins Folder](https://github.com/Lenn-xsr/Twee/tree/main/Front/src/mixins)).
 

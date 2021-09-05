@@ -56,7 +56,7 @@ export default {
   methods: {
     signin() {
       api.post("/user/signin", this.tempUser).then((response) => {
-        this.$socket.emit("signin", response.data);
+        this.$socket.emit("SIGNIN", response.data);
       });
     },
     signup() {
