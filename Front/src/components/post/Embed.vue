@@ -5,7 +5,7 @@
     <div class="info">
       <span class="title">{{ formatString(metas.title) }}</span>
       <small class="baseurl">{{
-        url.match("https://(.*?)/")[1].replace("www.", "")
+        url.match('https://(.*?)/')[1].replace('www.', '')
       }}</small>
     </div>
   </a>
@@ -13,15 +13,15 @@
 
 <script>
 export default {
-  name: "Embed",
-  props: ["url"],
+  name: 'Embed',
+  props: ['url'],
   data() {
     return {
       metas: {},
       embed: {
         url: null,
-        has: false,
-      },
+        has: false
+      }
     };
   },
   methods: {
@@ -32,7 +32,7 @@ export default {
         .then((r) => r.text())
         .then((match) => {
           cleanMatch = [
-            ...match.matchAll(/property="og:(.*?)" content="(.*?)"(.*?)>/g),
+            ...match.matchAll(/property="og:(.*?)" content="(.*?)"(.*?)>/g)
           ];
           cleanMatch.forEach((og) => (result[og[1]] = og[2]));
           this.metas = result;
@@ -48,19 +48,19 @@ export default {
         docWidth >= 365
       ) {
         this.embed = {
-          url: "https://www.youtube.com/embed/" + matchURLID[1],
-          has: true,
+          url: 'https://www.youtube.com/embed/' + matchURLID[1],
+          has: true
         };
       }
     },
     formatString(str) {
       return str.replace(/(&quot;)/g, '"');
-    },
+    }
   },
   created() {
     this.verifyEmbed();
     this.getMeta(this.url);
-  },
+  }
 };
 </script>
 

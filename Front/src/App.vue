@@ -1,16 +1,14 @@
 <template>
-  <div id="app">
-    <Nav />
-    <main>
-      <router-view />
-    </main>
-  </div>
+  <Nav />
+  <main>
+    <router-view />
+  </main>
 </template>
 <script>
-import Nav from "@/components/Nav.vue";
+import Nav from '@/components/basics/Nav.vue';
 
 export default {
-  components: { Nav },
+  components: { Nav }
 };
 </script>
 
@@ -46,7 +44,7 @@ body {
   overflow-wrap: break-word;
   font-size: 15px;
   display: grid;
-  grid-template-areas: "nav main blank" "nav main blank";
+  grid-template-areas: 'nav main blank' 'nav main blank';
   gap: 15px;
 }
 

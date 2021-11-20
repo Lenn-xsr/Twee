@@ -40,31 +40,31 @@
 </template>
 
 <script>
-import { api } from "@/services.js";
+import { api } from '@/services.js';
 
 export default {
-  name: "Login",
+  name: 'Login',
   data() {
     return {
       login: true,
       tempUser: {
         user: null,
-        password: null,
-      },
+        password: null
+      }
     };
   },
   methods: {
     signin() {
-      api.post("/user/signin", this.tempUser).then((response) => {
-        this.$socket.emit("SIGNIN", response.data);
+      api.post('/user/signin', this.tempUser).then((response) => {
+        this.$socket.emit('SIGNIN', response.data);
       });
     },
     signup() {
-      api.post("/user/signup", this.tempUser).then((response) => {
+      api.post('/user/signup', this.tempUser).then((response) => {
         console.log(response.data);
       });
-    },
-  },
+    }
+  }
 };
 </script>
 

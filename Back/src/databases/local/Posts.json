@@ -1,48 +1,48 @@
 [
   {
-    "id": "0",
+    "id": 1631405622364,
     "user": {
       "avatar": "https://cdn.discordapp.com/attachments/816450123210948649/847553723026505748/unknown.png",
       "username": "Naegin"
     },
     "comment": "Lofi para relaxar",
     "attachs": ["https://www.youtube.com/watch?v=5qap5aO4i9A"],
-    "likes": ["0", "1"],
+    "likes": ["lennart", "naegin"],
     "reposts": [],
     "replys": []
   },
   {
-    "id": "1",
+    "id": 1631405639478,
     "user": {
       "avatar": "https://cdn.discordapp.com/avatars/265924655276228618/df7c415d3b260ab3e4b27f400d2677cc.webp?size=512",
       "username": "Lennart"
     },
     "comment": "Olha meu db ai",
     "attachs": ["https://github.com/Lenn-xsr/db-local"],
-    "likes": ["0", "1"],
+    "likes": ["lennart", "naegin"],
     "reposts": [],
     "replys": [
       {
-        "id": "10",
+        "id": 1631405639472,
         "user": {
           "username": "Test",
           "avatar": "https://cdn.discordapp.com/avatars/265924655276228618/df7c415d3b260ab3e4b27f400d2677cc.webp?size=512"
         },
         "attachs": [],
         "comment": "q merda",
-        "likes": ["1", "0"],
+        "likes": ["lennart"],
         "replys": [],
         "reposts": []
       },
       {
-        "id": "312",
+        "id": 1631405639471,
         "user": {
           "username": "Test",
           "avatar": "https://cdn.discordapp.com/avatars/265924655276228618/df7c415d3b260ab3e4b27f400d2677cc.webp?size=512"
         },
         "attachs": [],
         "comment": "Test",
-        "likes": ["1"],
+        "likes": ["naegin"],
         "replys": [],
         "reposts": []
       }

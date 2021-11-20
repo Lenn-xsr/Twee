@@ -71,18 +71,18 @@
 </template>
 
 <script>
-import PostActions from "@/mixins/PostActions.js";
+import PostActions from '@/mixins/PostActions.js';
 
 export default {
-  name: "Interactions",
-  props: ["post"],
+  name: 'Interactions',
+  props: ['post'],
   mixins: [PostActions],
   methods: {
     toggleAnimation(target) {
       const toAnim = document.querySelector(`[data-id=icon_${target}]`);
-      toAnim.classList.toggle("is_animating");
-    },
-  },
+      toAnim.classList.toggle('is_animating');
+    }
+  }
 };
 </script>
 
@@ -129,7 +129,7 @@ export default {
 }
 
 .interaction-wrapper > div:hover .int-icon::before {
-  content: " ";
+  content: ' ';
   opacity: 0.1;
   background-color: currentColor;
   position: absolute;
@@ -145,7 +145,7 @@ export default {
   cursor: pointer;
   height: 50px;
   width: 50px;
-  background-image: url("../../assets/web_heart_animation.png");
+  background-image: url('../../assets/web_heart_animation.png');
   background-position: left;
   background-repeat: no-repeat;
   background-size: 2900%;

@@ -1,15 +1,12 @@
-import Vue from "vue";
-import Vuex from "vuex";
+import { createStore } from 'vuex';
 
-Vue.use(Vuex);
-
-export default new Vuex.Store({
+export default createStore({
   state: {
     posts: null,
     postOpened: {
       open: false,
-      data: null,
-    },
+      data: null
+    }
   },
   mutations: {
     UPDATE_POST(state, payload) {
@@ -20,14 +17,14 @@ export default new Vuex.Store({
     },
     ADD_POST(state, payload) {
       state.posts.unshift(payload);
-    },
+    }
   },
   actions: {
     SOCKET_POSTS(context, payload) {
-      context.commit("UPDATE_POSTS", payload);
+      context.commit('UPDATE_POSTS', payload);
     },
     SOCKET_POST(context, payload) {
-      context.commit("ADD_POST", payload);
-    },
-  },
+      context.commit('ADD_POST', payload);
+    }
+  }
 });

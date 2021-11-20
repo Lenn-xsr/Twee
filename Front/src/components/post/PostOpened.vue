@@ -45,16 +45,16 @@
 </template>
 
 <script>
-import Post from "./Post.vue";
-import Interactions from "./Interactions.vue";
+import Post from './Post.vue';
+import Interactions from './Interactions.vue';
 
-import PostActions from "@/mixins/PostActions.js";
+import PostActions from '@/mixins/PostActions.js';
 
 export default {
-  name: "PostOpened",
-  props: ["post"],
+  name: 'PostOpened',
+  props: ['post'],
   mixins: [PostActions],
-  components: { Post, Interactions },
+  components: { Post, Interactions }
 };
 </script>
 
@@ -83,7 +83,7 @@ export default {
 }
 
 .close-content:hover .int-icon::before {
-  content: " ";
+  content: ' ';
   opacity: 0.1;
   background-color: currentColor;
   position: absolute;

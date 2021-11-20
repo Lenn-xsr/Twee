@@ -6,28 +6,27 @@
 
 <script>
 export default {
-  name: "Post",
+  name: 'Post',
   data() {
     return {
-      comment: "",
+      comment: ''
     };
   },
-  components: {},
   methods: {
     post(text) {
       console.log(text);
-      this.$socket.emit("post", text);
-    },
+      this.$socket.emit('post', text);
+    }
   },
   sockets: {
     posts: (posts) => {
       console.log(posts);
-    },
+    }
   },
   watch: {
     comment(text) {
       this.post(text);
-    },
-  },
+    }
+  }
 };
 </script>

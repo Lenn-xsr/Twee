@@ -20,14 +20,14 @@
 </template>
 
 <script>
-import Embed from "./Embed.vue";
+import Embed from './Embed.vue';
 
 export default {
-  name: "Post",
-  props: ["post"],
+  name: 'Post',
+  props: ['post'],
   components: {
-    Embed,
-  },
+    Embed
+  }
 };
 </script>
 

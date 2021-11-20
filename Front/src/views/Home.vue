@@ -25,24 +25,24 @@
 </template>
 
 <script>
-import Post from "@/components/post/Post.vue";
-import PostOpened from "@/components/post/PostOpened.vue";
-import Interactions from "@/components/post/Interactions.vue";
+import Post from '@/components/post/Post.vue';
+import PostOpened from '@/components/post/PostOpened.vue';
+import Interactions from '@/components/post/Interactions.vue';
+import PostForm from '@/components/post/PostForm.vue';
 
-import { mapState } from "vuex";
-import PostForm from "../components/post/PostForm.vue";
+import { mapState } from 'vuex';
 
 export default {
-  name: "Home",
+  name: 'Home',
   computed: {
-    ...mapState(["postOpened", "posts"]),
+    ...mapState(['postOpened', 'posts'])
   },
   components: {
     Post,
     Interactions,
     PostOpened,
-    PostForm,
-  },
+    PostForm
+  }
 };
 </script>
 <style scoped>

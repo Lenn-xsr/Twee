@@ -18,19 +18,19 @@
 
 <script>
 export default {
-  name: "PostForm",
+  name: 'PostForm',
   data() {
     return {
       maxCharacteres: 21,
-      comment: "",
+      comment: ''
     };
   },
   methods: {
     placeCharactersAtEnd(el) {
       el.focus();
       if (
-        typeof window.getSelection != "undefined" &&
-        typeof document.createRange != "undefined"
+        typeof window.getSelection != 'undefined' &&
+        typeof document.createRange != 'undefined'
       ) {
         const range = document.createRange();
         range.selectNodeContents(el);
@@ -40,7 +40,7 @@ export default {
 
         sel.removeAllRanges();
         sel.addRange(range);
-      } else if (typeof document.body.createTextRange != "undefined") {
+      } else if (typeof document.body.createTextRange != 'undefined') {
         const textRange = document.body.createTextRange();
         textRange.moveToElementText(el);
         textRange.collapse(false);
@@ -48,7 +48,7 @@ export default {
       }
     },
     countPublishCharacters({ target: element }) {
-      const textareaCounter = document.querySelector("#textarea-counter");
+      const textareaCounter = document.querySelector('#textarea-counter');
       const text = element.innerText || element.textContent;
       const count = this.maxCharacteres - text.length;
 
@@ -59,7 +59,7 @@ export default {
 
         const releasedText = text.slice(0, this.maxCharacteres);
         const spareText = text.slice(this.maxCharacteres + 1);
-        element.innerHTML = releasedText + "<span>" + spareText + "</span>";
+        element.innerHTML = releasedText + '<span>' + spareText + '</span>';
 
         this.placeCharactersAtEnd(element);
       } else {
@@ -69,8 +69,8 @@ export default {
       }
 
       this.comment = text.slice(0, this.maxCharacteres);
-    },
-  },
+    }
+  }
 };
 </script>
 

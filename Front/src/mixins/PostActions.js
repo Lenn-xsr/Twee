@@ -1,4 +1,4 @@
-import { mapMutations } from "vuex";
+import { mapMutations } from 'vuex';
 
 export default {
   methods: {
@@ -6,21 +6,21 @@ export default {
       console.log({ postId });
     },
     openPost(data) {
-      document.body.style.overflow = "hidden";
+      document.body.style.overflow = 'hidden';
       if (data) {
         this.UPDATE_POST({
           open: true,
-          data,
+          data
         });
       }
     },
     closePost() {
-      document.body.style.overflow = "auto";
+      document.body.style.overflow = 'auto';
       this.UPDATE_POST({
         open: false,
-        data: null,
+        data: null
       });
     },
-    ...mapMutations(["UPDATE_POST"]),
-  },
+    ...mapMutations(['UPDATE_POST'])
+  }
 };
